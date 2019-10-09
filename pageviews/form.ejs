@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= header %>></title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="mainarea">
+    <h1><%= header %></h1>
+    <form action=" <%= action %>" method="post">
+        <p>
+            <div class="formdiv">
+            <label for="productId">productID:</label>
+            <input type="text" id="productId" name="productId"
+                    size="5" value="<%= productId.value %>"
+                    <%= productId.readonly %> >
+            </div>
+        </p>
+        <p>
+            <div class="formdiv">
+                <label for="name">name:</label>
+                <input type="text" id="name" name="name"
+                    size="15" value="<%= name.value %>"
+                    <%= name.readonly %> >
+            </div>
+        </p>
+        <p>
+            <div class="formdiv">
+                <label for="model">model:</label>
+                <input type="text" id="model" name="model"
+                size="25" value="<%= model.value %>"
+                <%= model.readonly %> >
+             </div>
+        </p>
+            <div class="formdiv">
+                <label for="price">price:</label>
+                <input type="text" id="price" name="price"
+                size="21" value="<%= price.value %>"
+                <%= price.readonly %> >
+            </div>
+        <p>
+            <div class="formdiv">
+                <label for="type">Type:</label>
+                <input type="text" id="type" name="type"
+                 size="21" value="<%= type.value %>"
+                 <%= type.readonly %> >
+            </div>
+        </p>
+            <button type="submit">Submit</button>
+    </form>
+    <div class="buttons">
+            <a href="/" class="myButton">Menu</a>
+    </div>
+    </div>
+</body>
+</html>

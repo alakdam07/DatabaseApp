@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>products</title>
+    <link rel="stylesheet"  type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <h2>All products</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>productId</th>
+                    <th>Name</th>
+                    <th>Model</th>
+                    <th>Price</th>
+                    <th>type</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% result.forEach(product => { %>
+                    <tr>
+                        <td><%= product.productId %></td>
+                        <td><%= product.name %></td>
+                        <td><%= product.model %></td>
+                        <td><%= product.price %></td>
+                        <td><%= product.type %></td>
+                    </tr>
+                <%}); %>
+            </tbody>
+        </table>
+        <div class="buttons">
+        <a href="/" class="myButton">Menu</a>
+        </div>
+    </main>
+</body>
+</html>
